@@ -1,1 +1,2 @@
-# resilient-scalable-cache
+### Resilient and scalable chache implemented with Elixir
+
