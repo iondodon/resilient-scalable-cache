@@ -2,7 +2,7 @@ version: '3.8'
 services:
     cache-master:
         build: ./cache-master
-        container_name: pbl-cache-master
+        container_name: cache-master
         tty: true
         volumes: 
             - ./cache-master:/cache-master
@@ -12,10 +12,8 @@ services:
 
     cache-slave1-replica1:
         build: ./cache-slave
-        container_name: pbl-cache-slave1-replica1
+        container_name: cache-slave1-replica1
         tty: true
-        # volumes: 
-        #     - ./cache-slave:/cache-slave
         restart: always
         depends_on: [cache-master]
         environment:
@@ -23,10 +21,8 @@ services:
 
     cache-slave1-replica2:
         build: ./cache-slave
-        container_name: pbl-cache-slave1-replica2
+        container_name: cache-slave1-replica2
         tty: true
-        # volumes: 
-        #     - ./cache-slave:/cache-slave
         restart: always
         depends_on: [cache-master]
         environment:
@@ -34,10 +30,8 @@ services:
 
     cache-slave2-replica1:
         build: ./cache-slave
-        container_name: pbl-cache-slave2-replica1
+        container_name: cache-slave2-replica1
         tty: true
-        # volumes: 
-        #     - ./cache-slave:/cache-slave
         restart: always
         depends_on: [cache-master]
         environment:
