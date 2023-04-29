@@ -1,6 +1,8 @@
 Resilient & Scalable Key-Value Cache
 Introducing a fault-tolerant, highly scalable key-value cache system, similar to Redis, built with Elixir. Elixir's error recovery capabilities allow the application to restart without losing state upon encountering errors.
 
+### Watch the demo
+
 [![Watch the demo](https://img.youtube.com/vi/J-ny69sOOwM/maxresdefault.jpg)](https://youtu.be/J-ny69sOOwM)
 
 Connect via telnet (telnet localhost 6666) to execute the following supported commands:
